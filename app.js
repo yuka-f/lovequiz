@@ -57,10 +57,10 @@ setupQuiz();
 
 const clickHandler = (e) => {
   if(quiz[quizIndex].correct === e.target.textContent){
-    window.alert('当たり！');
+    window.alert('当たり！さすがです❤️');
     score++;
   } else {
-    window.alert('残念！');
+    window.alert('残念！(T ^ T)');
   }
 
   quizIndex++;
@@ -68,7 +68,7 @@ const clickHandler = (e) => {
   if(quizIndex < quizLength){
     setupQuiz();
   }else {
-    window.alert('おしまいです！といてくれてありがとう！あなたの正解数は' + score + '/' + quizLength + 'です！')
+    window.alert('おしまいです！といてくれてありがとう！あなたの正解数は' + score + '/' + quizLength + 'です！この問題はインスタグラムの『恋愛の化学』から引用したよ！みてみてね♪')
   }
 };
 
